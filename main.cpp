@@ -8,12 +8,10 @@ int main()
 {
     std::string filename;
     std::cout << "Enter filename: ";
-    // std::cin >> filename;
     std::getline(std::cin, filename);
 
     std::string searchString;
     std::cout << "Enter string to search for: ";
-    // std::cin >> searchString;
     std::getline(std::cin, searchString);
 
     std::string content;
