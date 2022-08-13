@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 
 #define LOG(x) std::cout << x << std::endl
 
@@ -13,13 +14,16 @@ int main()
     std::cout << "Enter string to search for: ";
     std::cin >> searchString;
 
+    std::string content;
+    std::ifstream file(filename);
+
+    while (file >> content)
+    {
+        if (content.find(searchString) != std::string::npos)
+        {
+            std::cout << content << "\n";
+        }
+    }
+
     return 0;
 }
-
-
-/*
-with open(filename, "r") as file:
-    for line in file:
-        if search_string in line:
-            print(line)
-*/
