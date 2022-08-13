@@ -16,8 +16,6 @@ int main()
 
 
 /*
-filename = input("Enter filename: ")
-
 search_string = input("Enter string to search for: ")
 
 with open(filename, "r") as file:
